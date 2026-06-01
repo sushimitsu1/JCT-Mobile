@@ -3,29 +3,33 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://sushimitsu1.github.io/JCT-Mobile",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "@zxing/browser": "^0.1.5",
+    "@zxing/library": "^0.21.3",
+    "firebase": "^11.0.0",
+    "lucide-react": "^0.460.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@tailwindcss/vite": "^4.3.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^10.3.0",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "gh-pages": "^6.3.0",
-    "globals": "^17.6.0",
-    "tailwindcss": "^4.3.0",
-    "vite": "^8.0.12",
-    "vite-plugin-pwa": "^1.3.0"
+    "@eslint/js": "^9.17.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.14.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.1"
   }
 }
