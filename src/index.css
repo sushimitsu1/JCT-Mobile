@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jct-navy: #1e2a4a;
+  --color-jct-red:  #c8202f;
+  --color-jct-blue: #2b6cb0;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #f3f4f6;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
