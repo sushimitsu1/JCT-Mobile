@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { PackagePlus, Boxes, ClipboardList } from 'lucide-react'
 import Receiving from './screens/Receiving'
+import Orders from './screens/Orders'
 
 const TABS = [
   { id: 'receive',   label: 'Receive',   icon: PackagePlus },
@@ -20,7 +21,7 @@ export default function App() {
       <main className="flex-1 overflow-y-auto p-4">
         {tab === 'receive'   && <Receiving />}
         {tab === 'inventory' && <Placeholder title="Inventory" />}
-        {tab === 'orders'    && <Placeholder title="Orders" />}
+        {tab === 'orders' && <Orders />}
       </main>
 
       <nav className="bg-white border-t border-gray-200 flex"
