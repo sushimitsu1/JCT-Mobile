@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { PackagePlus, Boxes, ClipboardList } from 'lucide-react'
 import Receiving from './screens/Receiving'
 import Orders from './screens/Orders'
+import Inventory from './screens/Inventory'
 
 const TABS = [
   { id: 'receive',   label: 'Receive',   icon: PackagePlus },
@@ -20,7 +21,7 @@ export default function App() {
 
       <main className="flex-1 overflow-y-auto p-4">
         {tab === 'receive'   && <Receiving />}
-        {tab === 'inventory' && <Placeholder title="Inventory" />}
+        {tab === 'inventory' && <Inventory />}
         {tab === 'orders' && <Orders />}
       </main>
 
@@ -39,14 +40,6 @@ export default function App() {
           )
         })}
       </nav>
-    </div>
-  )
-}
-
-function Placeholder({ title }) {
-  return (
-    <div className="flex items-center justify-center h-full text-gray-400 text-sm">
-      {title} — coming next
     </div>
   )
 }
