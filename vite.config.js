@@ -14,8 +14,8 @@ export default defineConfig({
       manifest: {
         name: 'JCT Mobile WMS',
         short_name: 'JCT Mobile',
-        start_url: '/JCT-Mobile/',
-        scope: '/JCT-Mobile/',
+        start_url: '/',
+        scope: '/',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#1e2a4a',
